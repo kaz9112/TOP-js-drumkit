@@ -75,6 +75,17 @@
     console.log(e)
     this.classList.remove('playing');
   }
+  console.log('deg')
+  const pee = document.createElement('p')
+  const parentDiv = document.querySelector('.keys')
+
+  pee.classList.add('fuck')
+  pee.textContent = 'fuck'
+  pee.style.color= 'blue';
+  parentDiv.appendChild(pee)
+
+
+  console.log(div)
 
   const keys = document.querySelectorAll('.key');
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
